@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+#include <gmpxx.h>
+using namespace std;
+int gcd(long x, long y) {
+	long z;
+	while(y!=0) {
+		z=y;
+		y=x%y;
+		x=z; }
+	return x; }
+int main() {
+long x,y;
+cin>>x>>y;
+cout<<gcd(x,y);
+}
