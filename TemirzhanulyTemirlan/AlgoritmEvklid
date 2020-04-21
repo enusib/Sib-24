@@ -5,11 +5,14 @@ using namespace std;
 int main() {
   mpz_class x("123123123123");
   mpz_class y("456456456456");
-  mpz_class z("0");
-while(x%y!=0){
-  z+=x%y;
+if(x<y)
+{
+    swap(x,y);
 }
-
-cout<<z;
+while(x%y!=0){
+  x=x%y;
+  swap(x,y);
+}
+cout<<y;
 return 0;
 }
