@@ -2,14 +2,14 @@
 #include <gmpxx.h>
 using namespace std;
 int main() {
-mpz_class a("123123123123");
-mpz_class b("456456456456");
-mpz_class c;
+mpz_class x("123123123123");
+mpz_class y("456456456456");
+mpz_class z;
 while(b!=0){
-c=b;
-b=a%b;
-a=c;
+z=y;
+y=x%y;
+x=z;
 }
-cout<<a;
+cout<<x;
 return 0;
 }
