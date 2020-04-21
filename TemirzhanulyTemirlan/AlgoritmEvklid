@@ -1,15 +1,17 @@
 #include <iostream>
 #include <gmpxx.h>
 using namespace std;
+
 int main() {
-mpz_class x("123123123123");
-mpz_class y("456456456456");
-mpz_class z;
+  mpz_class x("123123123123");
+  mpz_class y("456456456456");
+  mpz_class z;
 while(y!=0){
-z=y;
-y=x%y;
-x=z;
+  z=y;
+  y=x%y;
+  x=z;
 }
+
 cout<<x;
 return 0;
 }
