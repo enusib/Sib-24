@@ -5,13 +5,11 @@ using namespace std;
 int main() {
   mpz_class x("123123123123");
   mpz_class y("456456456456");
-  mpz_class z;
+  mpz_class z("0");
 while(y!=0){
-  z=y;
-  y=x%y;
-  x=z;
+  z+=x%y;
 }
 
-cout<<x;
+cout<<z;
 return 0;
 }
