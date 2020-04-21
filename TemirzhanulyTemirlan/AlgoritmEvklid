@@ -1,12 +1,15 @@
 #include <iostream>
+#include <gmpxx.h>
 using namespace std;
-int GCD(int a, int b){
-  if (b == 0) return a;
-  else return GCD(b, a % b);
-}
 int main() {
-  int a, b;
-  cin >> a >> b;
-  cout << GCD(a,b);
-  return 0;
+mpz_class a("723132135121");
+mpz_class b("548685452157");
+mpz_class c;
+while(b!=0){
+c=b;
+b=a%b;
+a=c;
+}
+cout<<a;
+return 0;
 }
