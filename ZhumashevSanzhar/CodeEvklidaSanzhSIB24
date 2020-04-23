@@ -2,15 +2,15 @@
 #include <math.h>
 #include <gmpxx.h>
 using namespace std;
-int gcd(long x, long y) {
-	long z;
+int gcd( mpz_class x,  mpz_class y) {
+	 mpz_class z;
 	while(y!=0) {
 		z=y;
 		y=x%y;
 		x=z; }
 	return x; }
 int main() {
-long x,y;
+ mpz_class x,y;
 cin>>x>>y;
 cout<<gcd(x,y);
 }
