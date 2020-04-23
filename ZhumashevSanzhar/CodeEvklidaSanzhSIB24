@@ -2,15 +2,19 @@
 #include <math.h>
 #include <gmpxx.h>
 using namespace std;
-int gcd( mpz_class x,  mpz_class y) {
+int gcd(  mpz_class x, mpz_class y) {
 	 mpz_class z;
-	while(y!=0) {
-		z=y;
-		y=x%y;
-		x=z; }
+std::cout <<"x = \n";
+ std::cin >> x;
+std::cout << "y = \n";
+ std::cin >> y;
+ while(y!=0) {
+	z=y;
+	y=x%y;
+	x=z; }
 	return x; }
-int main() {
- mpz_class x,y;
-cin>>x>>y;
-cout<<gcd(x,y);
+ mpz_class main() {
+  mpz_class x,y;
+
+std::cout<<gcd(x,y)<<\n;
 }
