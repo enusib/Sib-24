@@ -2,7 +2,7 @@
 #include <iostream>
 #include <gmpxx.h>
 
-int main() {
+int main(int argc, char *argv[]) {
     mpz_class a;
     mpz_class b;
     mpz_class c;
