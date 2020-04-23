@@ -1,6 +1,5 @@
 //Вычисление НОД больших чисел
 #include <iostream>
-
 #include <gmpxx.h>
 
 int main() {
