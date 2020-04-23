@@ -1,17 +1,16 @@
 #include <iostream>
-
 #include <gmpxx.h>
 using namespace std;
 
-int gcd(long num1, long num1) {
+int gcd(mpz_class num1, mpz_class num1) {
 
-	long k;
+	mpz_class k;
 	while(num2!=0) {
 		k=num2;
 		num2=num1%num2;
 		num1=k; }
 	return num1; }
 int main() {
-long num1,num2;
+mpz_class num1,num2;
 cin>>num1>>num2;
 cout<<gcd(num1,num2);}
