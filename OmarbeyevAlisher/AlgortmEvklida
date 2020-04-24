@@ -22,5 +22,5 @@ mpz_class gcd(mpz_class num1, mpz_class num2) {
 int main() {
   mpz_class num1;
   mpz_class num2;
-  cout<<endl<<gcd(num1,num2) << " is GCD of numbers";
+  cout<<endl<<gcd(num1,num2) << " числа: ";
 }
