@@ -3,11 +3,13 @@
 
 int main() {
 
-mpz_class a("9263591128439081");
-mpz_class b("7612058254738945");
+mpz_class a;
+mpz_class b;
 
-std::cout<<"a = "<<a;
-std::cout<<"\nb = "<<b;
+std::cout<<"a = ";
+std::cin>>a;
+std::cout<<"\nb = ";
+std::cin>>b;
 
 mpz_class i;
 i=a;
